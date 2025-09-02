@@ -1,5 +1,3 @@
-name: autoupdate
-
 swarm-cronjob-labels: &cron-labels
   swarm.cronjob.enable: "true"
   swarm.cronjob.skip-running: "true"
