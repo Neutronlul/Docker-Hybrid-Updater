@@ -24,7 +24,7 @@ services:
     environment:
       TZ: ${TZ}
       GANTRY_NODE_NAME: "{{.Node.Hostname}}"
-      GANTRY_SLEEP_SECONDS: 0
+      GANTRY_SLEEP_SECONDS: "0"
     deploy:
       replicas: 0
       placement:
@@ -34,7 +34,7 @@ services:
         condition: none
       labels:
         <<: *cron-labels
-        swarm.cronjob.schedule: ${SCHEDULE_GANTRY:-${SCHEDULE}} # If you want to offset them
+        swarm.cronjob.schedule: "${SCHEDULE_GANTRY:-${SCHEDULE}}" # If you want to offset them
 
   swarm-cronjob:
     image: crazymax/swarm-cronjob:latest
@@ -46,3 +46,5 @@ services:
       placement:
         constraints:
           - node.role == manager
+      restart_policy:
+        condition: unless-stopped
