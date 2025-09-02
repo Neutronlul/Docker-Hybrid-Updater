@@ -28,7 +28,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
       TZ: ${TZ}
-      GANTRY_NODE_NAME: {{.Node.Hostname}}
+      GANTRY_NODE_NAME: "{{.Node.Hostname}}"
       GANTRY_SLEEP_SECONDS: 0
     deploy:
       replicas: 0
