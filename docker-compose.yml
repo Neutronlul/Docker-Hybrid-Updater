@@ -4,7 +4,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
-      TZ: ${TZ}
+      TZ: ${TZ:-UTC}
       WATCHTOWER_CLEANUP: ${WATCHTOWER_CLEANUP:-true}
       WATCHTOWER_TIMEOUT: ${WATCHTOWER_TIMEOUT:-60s}
       WATCHTOWER_RUN_ONCE: "true"
@@ -22,7 +22,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
-      TZ: ${TZ}
+      TZ: ${TZ:-UTC}
       GANTRY_NODE_NAME: "{{.Node.Hostname}}"
       GANTRY_SLEEP_SECONDS: "0"
     deploy:
@@ -41,7 +41,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
-      TZ: ${TZ}
+      TZ: ${TZ:-UTC}
     deploy:
       placement:
         constraints:
