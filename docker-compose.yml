@@ -14,7 +14,7 @@ services:
       TZ: ${TZ}
       WATCHTOWER_CLEANUP: ${WATCHTOWER_CLEANUP:-false}
       WATCHTOWER_TIMEOUT: ${WATCHTOWER_TIMEOUT:-10s}
-      WATCHTOWER_RUN_ONCE: true
+      WATCHTOWER_RUN_ONCE: "true"
     deploy:
       replicas: 0
       restart_policy:
