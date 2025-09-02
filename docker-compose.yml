@@ -34,7 +34,7 @@ services:
         condition: none
       labels:
         <<: *cron-labels
-        swarm.cronjob.schedule: ${SCHEDULE_GANTRY:-${SCHEDULE}} # If you want to offset them
+        swarm.cronjob.schedule: ${SCHEDULE_GANTRY:-$SCHEDULE} # If you want to offset them
 
   swarm-cronjob:
     image: crazymax/swarm-cronjob:latest
