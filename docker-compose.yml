@@ -5,8 +5,8 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
       TZ: ${TZ}
-      WATCHTOWER_CLEANUP: ${WATCHTOWER_CLEANUP:-false}
-      WATCHTOWER_TIMEOUT: ${WATCHTOWER_TIMEOUT:-10s}
+      WATCHTOWER_CLEANUP: ${WATCHTOWER_CLEANUP:-true}
+      WATCHTOWER_TIMEOUT: ${WATCHTOWER_TIMEOUT:-60s}
       WATCHTOWER_RUN_ONCE: "true"
     deploy:
       replicas: 0
