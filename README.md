@@ -1,4 +1,12 @@
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![GitHub stars](https://img.shields.io/github/stars/Neutronlul/Docker-Hybrid-Updater.svg?style=flat&logo=github)](https://github.com/Neutronlul/Docker-Hybrid-Updater/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Neutronlul/Docker-Hybrid-Updater.svg?style=flat&logo=github)](https://github.com/Neutronlul/Docker-Hybrid-Updater/network)
+[![GitHub issues](https://img.shields.io/github/issues/Neutronlul/Docker-Hybrid-Updater.svg?style=flat&logo=github)](https://github.com/Neutronlul/Docker-Hybrid-Updater/issues)
+[![GitHub last commit](https://img.shields.io/github/last-commit/Neutronlul/Docker-Hybrid-Updater.svg?style=flat&logo=github)](https://github.com/Neutronlul/Docker-Hybrid-Updater/commits)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Neutronlul/Docker-Hybrid-Updater/graphs/commit-activity)
+[![Docker Compose](https://img.shields.io/badge/docker--compose-blue.svg?logo=docker)](https://docs.docker.com/compose/)
+[![Docker Swarm](https://img.shields.io/badge/docker--swarm-blue.svg?logo=docker)](https://docs.docker.com/engine/swarm/)
+
 # Docker Hybrid Updater 
 
 
